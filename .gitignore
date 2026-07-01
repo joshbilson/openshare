@@ -1,8 +1,14 @@
 node_modules/
 .next/
+out/
 .env
 .env.local
+.env*.local
 .DS_Store
 reference repos/_extracted/
 .vercel
 .convex/
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/

@@ -1,0 +1,46 @@
+{
+  "name": "openshare",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, open-source, zero-login cross-platform playlist sharer.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "convex:codegen": "convex codegen",
+    "convex:dev": "convex dev"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@convex-dev/rate-limiter": "^0.3.2",
+    "@convex-dev/workflow": "^0.4.4",
+    "convex": "^1.42.1",
+    "jose": "^6.2.3",
+    "nanoid": "^5.1.16",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
