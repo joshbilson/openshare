@@ -1,13 +1,23 @@
 node_modules/
 .next/
 out/
-.env
-.env.local
-.env*.local
+
+# Environment / secrets — never commit anything but the template.
+.env*
+!.env.example
+
 .DS_Store
-reference repos/_extracted/
+
+# Local prior-art archives (third-party repos, not part of this project).
+reference repos/
+
+# Deployment / provider linking (keeps a public clone isolated from the live site).
 .vercel
 .convex/
+
+# Transient agent state (session-local, not useful to the public).
+.cursor/hooks/state/
+
 *.tsbuildinfo
 coverage/
 playwright-report/

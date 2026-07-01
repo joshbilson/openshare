@@ -19,6 +19,9 @@ import type { AdapterBundle } from "./types";
 import { searchYouTubeData } from "./youtube-data";
 
 const INNERTUBE = "https://music.youtube.com/youtubei/v1";
+// Public InnerTube web-client key. This is NOT a secret or a credential: it is
+// the same constant shipped in YouTube Music's own public JavaScript bundle and
+// is identical for every anonymous visitor. Safe to commit.
 const DEFAULT_KEY = "AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30";
 const DEFAULT_CLIENT_VERSION = "1.20240731.01.00";
 // InnerTube search filter restricting results to songs.
